@@ -15,7 +15,7 @@ export const Container = styled.div`
   color: white;
   z-index: 100;
   align-items: center;
-  font-weight: 700;
+  font-weight: bold;
   padding-top: 10px;
 
   @media (max-width: 1000px) {

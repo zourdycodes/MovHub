@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const Trending = () => {
   const [content, setContent] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(1); // warn => setPage re-assign in Pagination Components, each time its clicked will change the value of page
 
   const fetchTrending = async () => {
     const { data } = await axios.get(

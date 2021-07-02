@@ -4,3 +4,4 @@ export { Carousel } from "./carousel";
 export { ContentModal } from "./content-modal";
 export { SingleContent } from "./single-content";
 export { CustomPagination } from "./pagination/CustomPagination";
+export { Genres } from "./genres/Genres";

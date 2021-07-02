@@ -9,12 +9,17 @@ export const Header = () => {
         <FaVideo
           style={{
             marginRight: "12px",
+            // color: "orange",
           }}
         />{" "}
         Mov{" "}
         <span
           style={{
-            color: "orange",
+            backgroundColor: "orange",
+            borderRadius: "5px",
+            marginLeft: "10px",
+            color: "black",
+            padding: "0 10px",
           }}
         >
           Hub
