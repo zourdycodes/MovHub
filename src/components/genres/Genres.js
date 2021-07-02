@@ -10,6 +10,7 @@ export const Genres = ({
   type,
   setPage,
 }) => {
+  // warn => filtering functionalities
   const handleAdd = (genre) => {
     setSelectedGenres([...selectedGenres, genre]);
     setGenres(genres.filter((g) => g.id !== genre.id));
