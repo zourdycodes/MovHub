@@ -1,8 +1,10 @@
+import React from "react";
 import { Header, Navigation } from "./components";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container } from "@material-ui/core";
 import "./styles/App.css";
-import React from "react";
+import * as ROUTES from "./constants/routes";
+import { Trending } from "./pages";
 
 const App = () => {
   return (
@@ -11,7 +13,9 @@ const App = () => {
         <Header />
         <div className="app">
           <Container>
-            <Switch></Switch>
+            <Switch>
+              <Route path={ROUTES.HOME} component={Trending} exact />
+            </Switch>
           </Container>
         </div>
         <Navigation />

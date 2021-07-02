@@ -11,7 +11,14 @@ export const Header = () => {
             marginRight: "12px",
           }}
         />{" "}
-        The Movies Hub{" "}
+        Mov{" "}
+        <span
+          style={{
+            color: "orange",
+          }}
+        >
+          Hub
+        </span>{" "}
         <HiOutlineFilm
           style={{
             marginLeft: "12px",
