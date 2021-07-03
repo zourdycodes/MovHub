@@ -12,16 +12,16 @@ export const Genres = ({
 }) => {
   // warn => filtering functionalities
   const handleAdd = (genre) => {
-    setSelectedGenres([...selectedGenres, genre]);
-    setGenres(genres.filter((g) => g.id !== genre.id));
+    setSelectedGenres([...selectedGenres, genre]); //* selectedGenres: takes everything inside it => default: empty, genre: target value if genre
+    setGenres(genres.filter((g) => g.id !== genre.id)); //* every genre id !== to genres id inside genres array => return
     setPage(1);
   };
 
   const handleRemove = (genre) => {
     setSelectedGenres(
-      selectedGenres.filter((selected) => selected.id !== genre.id)
+      selectedGenres.filter((selected) => selected.id !== genre.id) //* filtering selectedGenres array
     );
-    setGenres([...genres, genre]);
+    setGenres([...genres, genre]); //* set back genres who the ID does not equal to selectedGenres Array ID
     setPage(1);
   };
 
